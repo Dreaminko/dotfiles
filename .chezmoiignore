@@ -1,7 +1,7 @@
 # Windows only
 {{ if ne .chezmoi.os "windows" }}
 .config/yasb/
-.glzr/glazewm
+.glzr/
 {{ end }}
 
 {{ if eq .chezmoi.os "windows" }}
