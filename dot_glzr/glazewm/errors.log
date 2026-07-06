@@ -1,0 +1,2 @@
+[2m2026-07-05T09:44:24.678923Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Shell exec failed for 'zebar'. Make sure the program exists and is accessible from your shell. Error: 操作已被用户取消。 (0x800704C7)
+[2m2026-07-05T09:55:23.642944Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Shell exec failed for 'yasbc reload --silent'. Make sure the program exists and is accessible from your shell. Error: 操作已被用户取消。 (0x800704C7)
