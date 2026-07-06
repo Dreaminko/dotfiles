@@ -1,0 +1,86 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "height": 30,
+  "spacing": 0,
+
+  "modules-left": [
+    "niri/workspaces"
+  ],
+
+  "modules-center": [
+    "niri/window"
+  ],
+
+  "modules-right": [
+    "cpu",
+    "memory",
+    "temperature",
+    "custom/load",
+    "network",
+    "battery",
+    "pulseaudio",
+    "clock",
+    "tray"
+  ],
+
+  "niri/workspaces": {
+    "format": "{value}",
+    "disable-scroll": true,
+    "all-outputs": false
+  },
+
+  "niri/window": {
+    "format": "{}",
+    "max-length": 90,
+    "separate-outputs": true
+  },
+
+  "cpu": {
+    "interval": 2,
+    "format": "CPU {usage}%"
+  },
+
+  "memory": {
+    "interval": 5,
+    "format": "MEM {percentage}%"
+  },
+
+  "temperature": {
+    "interval": 5,
+    "critical-threshold": 80,
+    "format": "TEMP {temperatureC}°C",
+    "format-critical": "TEMP {temperatureC}°C!"
+  },
+
+  "custom/load": {
+    "interval": 5,
+    "exec": "awk '{print $1\" \"$2\" \"$3}' /proc/loadavg",
+    "format": "{}"
+  },
+
+  "network": {
+    "interval": 5,
+    "format-wifi": "WLAN {essid}",
+    "format-ethernet": "ETH up",
+    "format-disconnected": "NET down"
+  },
+
+  "wireplumber": {
+    "format": "VOL {volume}%",
+    "format-muted": "VOL mute",
+    "tooltip": false,
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+  },
+
+  "clock": {
+    "interval": 1,
+    "format": "{:%Y-%m-%d %H:%M:%S}"
+  },
+
+  "tray": {
+    "spacing": 4
+  }
+}

@@ -1,0 +1,107 @@
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: normal;
+
+  box-shadow: none;
+  text-shadow: none;
+}
+
+window#waybar {
+  background: rgba(12, 12, 12, 0.58);
+  color: #ffffff;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#workspaces {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+#workspaces button {
+  background: rgba(34, 34, 34, 0.62);
+  color: #bbbbbb;
+
+  padding: 3px 6px;
+  margin: 2px 1px;
+
+  border-radius: 0;
+  border: 1px solid rgba(80, 80, 80, 0.72);
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+  background: rgba(40, 85, 119, 0.82);
+  color: #ffffff;
+
+  border: 1px solid rgba(76, 120, 153, 0.95);
+}
+
+#workspaces button.visible {
+  background: rgba(95, 103, 106, 0.72);
+  color: #ffffff;
+
+  border: 1px solid rgba(95, 103, 106, 0.9);
+}
+
+#workspaces button.urgent {
+  background: rgba(144, 0, 0, 0.85);
+  color: #ffffff;
+
+  border: 1px solid rgba(180, 40, 40, 0.95);
+}
+
+#workspaces button:hover {
+  background: rgba(50, 50, 50, 0.72);
+  color: #ffffff;
+}
+
+#window {
+  background: transparent;
+  color: #ffffff;
+
+  padding: 0 8px;
+  margin: 0;
+}
+
+#cpu,
+#memory,
+#temperature,
+#custom-load,
+#network,
+#battery,
+#wireplumber,
+#clock,
+#tray {
+  background: transparent;
+  color: #ffffff;
+
+  padding: 0 7px;
+  margin: 0;
+
+  border-left: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 0;
+}
+
+#temperature.critical,
+#battery.critical {
+  background: rgba(144, 0, 0, 0.75);
+  color: #ffffff;
+}
+
+#battery.warning {
+  color: #ffffff;
+}
+
+#wireplumber.muted,
+#network.disconnected {
+  color: #aaaaaa;
+}
