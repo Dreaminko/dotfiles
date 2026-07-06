@@ -3,7 +3,7 @@
   - YASB
 
 Preview:
-<img width="3839" height="2159" alt="image" src="https://github.com/user-attachments/assets/636e96b1-e83e-4dbc-8349-a2cdc4663723" />
+<img width="3840" height="2160" alt="image" src="https://github.com/user-attachments/assets/57ddf195-6046-4a70-b09a-1892ecbf4b08" />
 
 ## Linux
   - Niri
