@@ -18,5 +18,7 @@
 
 # macOS only
 {{ if ne .chezmoi.os "darwin" }}
-.config/aerospace/
+.aerospace.tomls
 {{ end }}
+
+README.md
