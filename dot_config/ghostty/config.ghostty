@@ -1,0 +1,12 @@
+theme = 0x96f
+custom-shader-animation = true
+
+font-size = 16
+
+cursor-style = underline
+cursor-style-blink = false
+shell-integration-features = no-cursor
+custom-shader = ~/.config/ghostty/cursor_warp.glsl
+
+background-opacity = 0.85
+background-blur = true

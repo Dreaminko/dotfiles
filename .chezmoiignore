@@ -19,6 +19,7 @@
 # macOS only
 {{ if ne .chezmoi.os "darwin" }}
 .aerospace.tomls
+.config/ghostty/
 {{ end }}
 
 README.md
